@@ -1,0 +1,14 @@
+page-settings {
+  .item {
+    background-color: color($colors, dark) !important;
+    color: white;
+  }
+
+  .scroll-content {
+    background-color: color($colors, dark) !important;
+  }
+
+  ion-content.has-refresher > .scroll-content {
+    background-color: color($colors, dark) !important;
+  }
+}

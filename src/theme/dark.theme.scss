@@ -1,0 +1,396 @@
+.theme-dark {
+  .scroll-content {
+    background-color: color($colors, dark) !important;
+  }
+
+  ion-content.has-refresher > .scroll-content {
+    background-color: color($colors, dark) !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .card-title {
+    color: white;
+  }
+
+  a {
+    color: color($colors, primary);
+  }
+
+  .segment-button {
+    color: color($colors, primary);
+  }
+
+  .segment-button.segment-activated {
+    border-color: color($colors, primary);
+  }
+
+  .tabs .tabbar {
+    background: color($colors, dark);
+  }
+
+  .tabs[tabsHighlight="true"] .tab-highlight {
+    background: color($colors, primary);
+  }
+
+  .tabs .tab-button[aria-selected="true"] .tab-button-icon {
+    color: color($colors, primary);
+  }
+
+  .movieheader .button {
+    color: color($colors, primary);
+  }
+
+  .fakediv {
+    background-color: color($colors, lightdark) !important;
+    width: 96%;
+    margin: auto;
+    height: 85%;
+  }
+
+  .faketitle {
+    background-color: color($colors, lightdark) !important;
+    width: 96%;
+    margin: auto;
+    height: 10%;
+    margin-top: 10px;
+  }
+
+  .toolbar-background {
+    background: color($colors, dark) !important;
+  }
+
+  .card {
+    background-color: color($colors, lightdark) !important;
+  }
+
+  .toolbar-title {
+    color: white;
+  }
+
+  .greetingheader {
+    background: color($colors, lightdark);
+    padding: 0px;
+    .greetingheadertext {
+      padding: 0 10px 10px 5px;
+    }
+  }
+
+  page-movies {
+    .card {
+      max-width: 180px;
+      height: 330px;
+      max-height: 330px;
+      margin: 2px 2px 10px 2px;
+      background-color: color($colors, lightdark);
+      border-radius: 5px;
+    }
+  }
+
+  ion-item.movieheader {
+    padding-left: 2px;
+    font-weight: bold;
+    background-color: color($colors, lightdark);
+    color: white;
+  }
+
+  .card-title p {
+    color: white;
+  }
+
+  .secondscroll .card {
+    width: 250px;
+    max-width: 250px;
+    height: 200px;
+    max-height: 200px;
+    margin: 2px 2px 10px 2px;
+    //color: color($colors, primary, base);
+    //background-color: map-get($colors, secondary);
+    background-color: color($colors, lightdark);
+    border-radius: 5px;
+  }
+
+  page-view-movie {
+    p {
+      white-space: normal;
+      color: white;
+    }
+
+    .item p {
+      color: white;
+    }
+
+    .list .item-block .item-inner {
+      border-bottom: none;
+    }
+
+    .item {
+      background-color: color($colors, dark) !important;
+      color: white;
+    }
+
+    .scroll-content {
+      margin-top: 0 !important;
+      background-color: color($colors, dark) !important;
+    }
+    ion-header,
+    .toolbar-background {
+      //background-color: initial !important;
+      background-color: rgba(255, 255, 255, 0) !important;
+
+      &:after {
+        height: 0 !important;
+      }
+    }
+
+    .segment-button {
+      color: color($colors, primary);
+    }
+
+    .segment-button.segment-activated {
+      border-color: color($colors, primary);
+    }
+
+    .reviewbox {
+      .label {
+        margin: 0;
+        margin-top: 10px;
+        background-color: color($colors, primary);
+        max-width: 95%;
+        padding: 10px;
+        /* border-radius: 10px; */
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+
+      .timep {
+        font-size: 1rem;
+        float: right;
+        color: color($colors, dark);
+      }
+    }
+  }
+
+  page-view-show {
+    p {
+      white-space: normal;
+      color: white;
+    }
+
+    .item p {
+      color: white;
+    }
+
+    .list .item-block .item-inner {
+      border-bottom: none;
+    }
+
+    .item {
+      background-color: color($colors, dark) !important;
+      color: white;
+    }
+
+    .scroll-content {
+      margin-top: 0 !important;
+      background-color: color($colors, dark) !important;
+    }
+    ion-header,
+    .toolbar-background {
+      //background-color: initial !important;
+      background-color: rgba(255, 255, 255, 0) !important;
+
+      &:after {
+        height: 0 !important;
+      }
+    }
+
+    .segment-button {
+      color: color($colors, primary);
+    }
+
+    .segment-button.segment-activated {
+      border-color: color($colors, primary);
+    }
+
+    .accordion-list {
+      background: color($colors, light) !important;
+      height: 100%;
+    }
+    .section-accordion {
+      background: color($colors, dark) !important;
+      color: white;
+      margin-bottom: 0px;
+    }
+    .section-active-accordion {
+      background: color($colors, primary) !important;
+      color: #fff;
+    }
+
+    .child-accordion {
+      background: #31426d !important;
+      color: #000;
+      margin-bottom: 0px;
+    }
+    .child-item-accordion {
+      background: #495980 !important;
+      color: #000;
+      padding: 10px;
+    }
+    .child-item-accordion p {
+      color: white;
+    }
+
+    .reviewbox {
+      .label {
+        margin: 0;
+        margin-top: 10px;
+        background-color: color($colors, primary);
+        max-width: 95%;
+        padding: 10px;
+        /* border-radius: 10px; */
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+
+      .timep {
+        font-size: 1rem;
+        float: right;
+        color: color($colors, dark);
+      }
+    }
+  }
+
+  page-topratedshows,
+  page-upcomingmovies,
+  page-topratedmovies,
+  page-todayshows,
+  page-popularshows,
+  page-nowplayingmovies,
+  page-popularmovies {
+    .card-title {
+      background-color: rgba(138, 43, 226, 0.8);
+    }
+  }
+
+  page-explore {
+    ion-segment.segment {
+      background-color: color($colors, dark) !important;
+    }
+
+    .resultsdiv {
+      h2 {
+        color: white;
+      }
+
+      .item {
+        background-color: color($colors, dark) !important;
+      }
+    }
+  }
+
+  page-profile {
+    .scroll-content {
+      margin-top: 0 !important;
+    }
+    ion-header,
+    .toolbar-background {
+      //background-color: initial !important;
+      background-color: rgba(255, 255, 255, 0) !important;
+
+      &:after {
+        height: 0 !important;
+      }
+    }
+
+    .profileheader {
+      .item {
+        background-color: color($colors, dark) !important;
+      }
+
+      h2 {
+        color: white;
+      }
+    }
+
+    .segm {
+      .item {
+        background-color: color($colors, dark) !important;
+      }
+    }
+
+    p {
+      color: white !important;
+    }
+
+    .item p {
+      color: white;
+    }
+
+    .item {
+      background-color: color($colors, dark) !important;
+      color: white;
+    }
+
+    .segment-button {
+      color: color($colors, primary);
+    }
+
+    .segment-button.segment-activated {
+      border-color: color($colors, primary);
+    }
+  }
+
+  page-view-actor {
+    .scroll-content {
+      margin-top: 0 !important;
+      background-color: color($colors, dark) !important;
+    }
+    ion-header,
+    .toolbar-background {
+      //background-color: initial !important;
+      background-color: rgba(255, 255, 255, 0) !important;
+
+      &:after {
+        height: 0 !important;
+      }
+    }
+    p {
+      white-space: normal;
+      color: white;
+    }
+
+    .item p {
+      color: white;
+    }
+
+    .list .item-block .item-inner {
+      border-bottom: none;
+    }
+
+    .item {
+      background-color: color($colors, dark) !important;
+      color: white;
+    }
+  }
+
+  page-settings {
+    .item {
+      background-color: color($colors, dark) !important;
+      color: white;
+    }
+
+    .scroll-content {
+      background-color: color($colors, dark) !important;
+    }
+
+    ion-content.has-refresher > .scroll-content {
+      background-color: color($colors, dark) !important;
+    }
+  }
+}

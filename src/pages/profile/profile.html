@@ -1,0 +1,72 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="bgtranslucent">
+
+  <ion-navbar>
+    <ion-title></ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only class="waitspinner" *ngIf="!watchlist || !name || !displayPic">
+        <ion-spinner name="dots"></ion-spinner>
+      </button>
+      <button ion-button icon-only (click)="showPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="fadein-down">
+  <div class="profileheader fadein-down">
+    <img-loader class="bcdrp" src="{{displayPic}}"></img-loader>
+  </div>
+
+  <div class="segm">
+    <div>
+      <ion-segment [(ngModel)]="profilesegment">
+        <ion-segment-button value="info">
+          INFO
+        </ion-segment-button>
+        <ion-segment-button value="watchlist">
+          WATCHLIST
+        </ion-segment-button>
+        <ion-segment-button value="favourites">
+          FAVOURITES
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+    <div [ngSwitch]="profilesegment">
+      <ion-list *ngSwitchCase="'info'">
+        <ion-item>
+          <ion-icon name="leaf" item-start></ion-icon>
+          <h2>Hello {{name}},</h2>
+          <p>{{greeting}}</p>
+        </ion-item>
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'watchlist'" no-lines>
+        <ion-item *ngFor="let film of watchlist" tappable (click)="openDetails(film)">
+          <ion-thumbnail item-start>
+            <img-loader src="https://image.tmdb.org/t/p/w185{{film.poster_path}}"></img-loader>
+          </ion-thumbnail>
+          <h2>{{film.name}}</h2>
+        </ion-item>
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'favourites'" no-lines>
+        <ion-item *ngFor="let film of favourites" tappable (click)="openDetails(film)">
+          <ion-thumbnail item-start>
+            <img-loader src="https://image.tmdb.org/t/p/w185{{film.poster_path}}"></img-loader>
+          </ion-thumbnail>
+          <h2>{{film.name}}</h2>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+
+</ion-content>

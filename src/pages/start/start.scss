@@ -1,0 +1,37 @@
+page-start {
+  .scroll-content {
+    margin-top: 0 !important;
+  }
+  ion-header,
+  .toolbar-background {
+    //background-color: initial !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+
+    &:after {
+      height: 0 !important;
+    }
+  }
+
+  ion-tabs {
+    display: none;
+  }
+
+  ion-title {
+    text-align: center;
+  }
+
+  .toolbar-title {
+    color: white;
+  }
+
+  .button {
+    height: 80px;
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+    min-height: 100%;
+    border: 0;
+  }
+}

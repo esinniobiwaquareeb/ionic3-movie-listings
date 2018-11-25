@@ -1,0 +1,155 @@
+page-view-show {
+  p {
+    white-space: normal;
+    color: white;
+  }
+
+  .item p {
+    color: white;
+  }
+
+  .list .item-block .item-inner {
+    border-bottom: none;
+  }
+
+  .item {
+    background-color: color($colors, dark) !important;
+    color: white;
+  }
+
+  .scroll-content {
+    margin-top: 0 !important;
+    background-color: color($colors, dark) !important;
+  }
+  ion-header,
+  .toolbar-background {
+    //background-color: initial !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+
+    &:after {
+      height: 0 !important;
+    }
+  }
+
+  .segm {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+  }
+
+  .bcdrp img {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    border: 0;
+    position: fixed;
+    z-index: 8;
+  }
+
+  .list .item-block .item-inner {
+    border-bottom: none;
+  }
+
+  .item ion-thumbnail img {
+    width: 80px;
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  .list {
+    padding-top: 40px;
+  }
+
+  ion-segment {
+    background-color: rgba(220, 220, 220, 0.7);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed;
+    z-index: 10;
+  }
+
+  ion-scroll {
+    white-space: nowrap;
+    height: 200px;
+  }
+
+  .accordion-list .label {
+    margin: 0px;
+  }
+  .accordion-list .list {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .accordion-list .list-header {
+    margin-bottom: 0px;
+  }
+
+  .accordion-list {
+    background: color($colors, light) !important;
+    height: 100%;
+  }
+  .section-accordion {
+    background: color($colors, dark) !important;
+    color: white;
+    margin-bottom: 0px;
+  }
+  .section-active-accordion {
+    background: color($colors, primary) !important;
+    color: #fff;
+  }
+
+  .child-accordion {
+    background: #31426d !important;
+    color: #000;
+    margin-bottom: 0px;
+  }
+  .child-item-accordion {
+    background: #495980 !important;
+    color: #000;
+    padding: 10px;
+  }
+  .child-item-accordion p {
+    color: white;
+  }
+
+  .reviewbox {
+    ion-thumbnail img {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      border-top-left-radius: 100%;
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%;
+    }
+
+    .item ion-thumbnail {
+      min-width: 40px;
+      min-height: 40px;
+    }
+
+    ion-item.noreview .label {
+      border-radius: 20px;
+      text-align: center;
+      max-width: 50%;
+      margin: auto;
+      margin-top: 10px;
+    }
+    .label {
+      margin: 0;
+      margin-top: 10px;
+      background-color: color($colors, primary);
+      max-width: 95%;
+      padding: 10px;
+      /* border-radius: 10px; */
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    .timep {
+      font-size: 1rem;
+      float: right;
+      color: color($colors, dark);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+page-explore {
+  .toolbar .searchbar {
+    padding: 8px;
+  }
+
+  ion-segment.segment {
+    padding-top: 15px;
+    position: fixed;
+    z-index: 10;
+  }
+
+  ion-segment.segment {
+    background-color: color($colors, dark) !important;
+  }
+
+  .resultsdiv {
+    margin-top: 60px;
+    h2 {
+      color: white;
+    }
+
+    .item {
+      background-color: color($colors, dark) !important;
+    }
+  }
+}

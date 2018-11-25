@@ -1,0 +1,37 @@
+<!--
+  Generated template for the PopularshowsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>popularshows</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only class="waitspinner" *ngIf="!popseries || somethingloading">
+        <ion-spinner name="dots"></ion-spinner>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page fadein-down">
+
+  <ion-list no-lines>
+    <ion-item *ngFor="let serie of popseries" class="fadein-down">
+      <ion-card>
+        <img-loader src="https://image.tmdb.org/t/p/w185{{ serie.poster_path }}" tappable (click)="openSeriesDetails(serie)"></img-loader>
+        <div class="card-title">{{ serie.vote_average }}</div>
+        <div class="card-subtitle" tappable (click)="addToWatchlist(serie)">+</div>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+  <ion-infinite-scroll (ionInfinite)="loadMoreMovies($event)" loadingSpinner="bubbles" loadinText="Loading More..">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>

@@ -1,0 +1,55 @@
+page-view-actor {
+  .scroll-content {
+    margin-top: 0 !important;
+  }
+  ion-header,
+  .toolbar-background {
+    //background-color: initial !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+
+    &:after {
+      height: 0 !important;
+    }
+  }
+  .segm {
+    position: absolute;
+    top: 450px;
+    width: 100%;
+  }
+
+  .bcdrp img {
+    position: fixed;
+    max-height: 500px;
+    min-width: 100%;
+  }
+
+  p {
+    white-space: normal;
+    color: white;
+  }
+
+  .item p {
+    color: white;
+  }
+
+  .list .item-block .item-inner {
+    border-bottom: none;
+  }
+
+  .item {
+    background-color: color($colors, dark) !important;
+    color: white;
+  }
+
+  .item ion-thumbnail img {
+    width: 80px;
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  ion-segment {
+    background-color: rgba(220, 220, 220, 0.7);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
